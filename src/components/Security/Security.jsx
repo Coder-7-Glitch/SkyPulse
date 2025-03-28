@@ -36,7 +36,7 @@ export default function Security() {
       >
         <div className="security-card text-white text-center relative">
           <div className="logo w-[200px] mx-auto">
-            <img src="/logo.svg" alt="" className="w-full" />
+            <img src="/Logo.svg" alt="" className="w-full" />
           </div>
           <div className="content my-6">
             <h1 className="text-5xl font-fontWorkSans font-semibold">
