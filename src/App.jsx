@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.css'
 import { Route, Routes } from "react-router-dom";
-import Header from './components/header/header';
-import Security from './components/Security/security';
-import Sidebar from './components/sidebar/sidebar';
+import Header from './components/header/Header';
+import Security from './components/Security/Security';
+import Sidebar from './components/sidebar/Sidebar';
 import Dashboard from './Dashboard/Dashboard';
 
 function App() {
