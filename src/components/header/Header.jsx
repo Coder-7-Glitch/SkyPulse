@@ -55,7 +55,7 @@ export default function Header() {
                 className="w-[200px] sm:block hidden"
               />
               <img
-                src="/Logo.svg"
+                src="/logo.svg"
                 alt=""
                 className="w-[50px] sm:hidden block"
               />
