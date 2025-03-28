@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Security /> */}
+      <Security />
       <div className="lg:flex gap-12">
         <Sidebar />
         <Dashboard />
