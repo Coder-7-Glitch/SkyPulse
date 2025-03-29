@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Network",
+    "amount": "35M",
+    "percent": "25%"
+},
+{
+      "title": "Balance",
+      "amount": "50M",
+      "percent": "50%"
+    },
+    {
+      "title": "Sales per month",
+      "amount": "40M",
+      "percent": "5%"
+    },
+    {
+    "title": "Insurance",
+    "amount": "35M",
+    "percent": "15%"
+  }
+]

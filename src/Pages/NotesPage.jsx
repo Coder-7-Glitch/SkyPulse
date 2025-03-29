@@ -58,7 +58,7 @@ const NotesPage = () => {
           </div>
         </div>
         {notesData.length > 0 ? (
-          <div className="mt-10 grid grid-cols-3 gap-4 w-full">
+          <div className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 w-full">
             {notesData.map((note, index) => (
               <NotesCard key={index} note={note} deleteNote={deleteNote} />
             ))}
