@@ -25,13 +25,13 @@ const NotesPage = () => {
   return (
     <>
       <ToastContainer position="top-right" theme="light" autoClose={2000} />
-      <div className="relative w-full py-6 lg:px-6 ps-[4rem] pe-[1rem]">
+      <div className="relative w-full lg:px-12 ps-[4rem] pe-[1rem] pt-3">
         <div className="mb-3">
-          <div>
-            <h1 className="font-worksans text-5xl font-medium text-text_Color">
+          <div className="heading">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl text-text_Color font-fontRoboto">
               Notes
             </h1>
-            <p className="text-zinc-400">
+            <p className="text-sm md:text-lg text-[#9d9d9d] mt-1 font-fontWorkSans">
               Keep all your notes organized and accessible.
             </p>
           </div>
