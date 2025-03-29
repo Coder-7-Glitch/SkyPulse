@@ -11,7 +11,9 @@ export default function Sidebar() {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
-
+  const reloadPage = () => {
+    window.location.reload();
+  };
   return (
     <div className="relative h-[89vh] flex">
       <div
@@ -43,7 +45,7 @@ export default function Sidebar() {
                 <li key={index}>
                   <Link
                     to={item.link}
-                    className="cursor-pointer group transition-all flex items-center gap-4 px-3 py-2 rounded hover:bg-body_Color lg:w-full w-[50%]"
+                    className="cursor-pointer group transition-all flex items-center gap-4 px-3 py-2 rounded hover:bg-body_Color lg:w-full sm:w-[50%] w-full"
                   >
                     <div className="icon text-2xl bg-body_Color w-10 h-10 flex items-center justify-center rounded-xl text-text_Color">
                       {item.icon}
@@ -61,7 +63,8 @@ export default function Sidebar() {
               <li className="mt-auto">
                 <Link
                   to={"/"}
-                                  className="cursor-pointer transition-all flex items-center gap-4 bg-body_Color px-3 py-2 rounded lg:w-full w-[50%]"
+                  className="cursor-pointer transition-all flex items-center gap-4 bg-body_Color px-3 py-2 rounded lg:w-full sm:w-[50%] w-full"
+                  onClick={reloadPage}
                 >
                   <div className="icon text-2xl w-10 h-10 flex items-center justify-center rounded-xl text-text_Color">
                     <FiLogOut />

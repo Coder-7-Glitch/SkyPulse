@@ -11,7 +11,8 @@ export default {
         text_Color: "#6DD9D3",
         accent_Color: "#050714",
         card_Shadow: "rgba(0, 0, 0, 0.1)",
-        body_Color: "#595858",
+        icons_Color: "#595858",
+        body_Color: "#2C2C2C"
 
       },
     },

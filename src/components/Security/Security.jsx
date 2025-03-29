@@ -10,7 +10,7 @@ export default function Security() {
     e.preventDefault();
 
     const validCredentials = {
-      "ahad97140@gmail.com": "415364",
+      "ahad97140@gmail.com": "Code Crafter",
       "shahbazansari.dev@gmail.com": "shahbaz2007",
     };
 
@@ -74,7 +74,7 @@ export default function Security() {
             <div className="submit-btn mt-3">
               <button
                 type="button"
-                className="text-[20px] bg-body_Color px-6 py-3 rounded-[8px] hover:bg-accent_Color hover:text-black transition-all ease-linear"
+                className="text-[20px] bg-body_Color px-6 py-3 rounded-[8px] hover:bg-text_Color hover:text-black transition-all ease-linear"
                 onClick={securityFunction}
               >
                 Proceed

@@ -14,7 +14,9 @@ function App() {
       <Security />
       <div className="lg:flex gap-12">
         <Sidebar />
-        <Dashboard />
+        <Routes>
+          <Route path='/' element={<Dashboard />} />
+        </Routes>
       </div>
 
     </>
