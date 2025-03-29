@@ -51,12 +51,12 @@ export default function Header() {
             <div className="logo">
               <img
                 src="/assets/Website Name.svg"
-                alt=""
+                alt="IMG"
                 className="w-[200px] sm:block hidden"
               />
               <img
-                src="/Logo.svg"
-                alt=""
+                src="/assets/Logo.svg"
+                alt="IMG"
                 className="w-[50px] sm:hidden block"
               />
             </div>
@@ -69,7 +69,7 @@ export default function Header() {
             >
               <img
                 src="/assets/profile-img.jpeg"
-                alt=""
+                alt="IMG"
                 className="rounded-full w-[50px] h-[50px]"
               />{" "}
               {userName}
