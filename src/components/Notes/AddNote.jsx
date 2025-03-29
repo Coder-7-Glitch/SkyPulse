@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Quill from "quill";
 import "quill/dist/quill.snow.css";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 const AddNote = ({ setAddNote, setNotesData }) => {
   const editorRef = useRef(null);

@@ -4,10 +4,10 @@ import { Route, Routes } from "react-router-dom";
 import Header from './components/header/Header';
 import Security from './components/Security/Security';
 import Sidebar from './components/sidebar/Sidebar';
-import Dashboard from './components/sidebar-Pages/Dashboard';
-import Earning from './components/sidebar-Pages/Earning';
-import Notes from './Pages/Notes';
-import Plans from './components/sidebar-Pages/Plans';
+import DashboardPage from './Pages/DashboardPage';
+import EarningPage from './Pages/EarningPage';
+import NotesPage from './Pages/NotesPage';
+import PlansPage from './Pages/PlansPage';
 
 function App() {
 
@@ -18,10 +18,10 @@ function App() {
       <div className="lg:flex w-full">
         <Sidebar />
         <Routes>
-          <Route path='/' element={<Dashboard />} />
-          <Route path='/earning' element={<Earning />} />
-          <Route path='/notes' element={<Notes />} />
-          <Route path='/plans' element={<Plans />} />
+          <Route path='/' element={<DashboardPage />} />
+          <Route path='/earning' element={<EarningPage />} />
+          <Route path='/notes' element={<NotesPage />} />
+          <Route path='/plans' element={<PlansPage />} />
         </Routes>
       </div>
 
