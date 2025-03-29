@@ -5,18 +5,18 @@
     "percent": "25%"
 },
 {
-      "title": "Balance",
-      "amount": "50M",
+      "title": "Balance per year",
+      "amount": "480M",
       "percent": "50%"
     },
     {
-      "title": "Sales per month",
+      "title": "Earnings per month",
       "amount": "40M",
       "percent": "5%"
     },
     {
-    "title": "Insurance",
-    "amount": "35M",
+    "title": "Donation per Month",
+    "amount": "25M",
     "percent": "15%"
   }
 ]
