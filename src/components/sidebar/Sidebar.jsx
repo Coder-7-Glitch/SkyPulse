@@ -64,7 +64,7 @@ export default function Sidebar() {
               <li className="mt-auto">
                 <Link
                   to={"/"}
-                  className="cursor-pointer transition-all flex items-center gap-4 bg-icons_Color px-3 py-2 rounded lg:w-full sm:w-[50%] w-full lg:mt-[15rem]"
+                  className="cursor-pointer transition-all flex items-center gap-4 bg-icons_Color px-3 py-2 rounded lg:w-full sm:w-[50%] w-full lg:mt-[10rem]"
                   onClick={reloadPage}
                 >
                   <div className="icon text-2xl w-10 h-10 flex items-center justify-center rounded-xl text-text_Color">

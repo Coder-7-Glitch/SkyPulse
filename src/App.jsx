@@ -6,7 +6,7 @@ import Security from './components/Security/Security';
 import Sidebar from './components/sidebar/Sidebar';
 import Dashboard from './components/sidebar-Pages/Dashboard';
 import Earning from './components/sidebar-Pages/Earning';
-import Notes from './components/sidebar-Pages/Notes';
+import Notes from './Pages/Notes';
 import Plans from './components/sidebar-Pages/Plans';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Header />
-      <Security />
+      {/* <Security /> */}
       <div className="lg:flex w-full">
         <Sidebar />
         <Routes>
