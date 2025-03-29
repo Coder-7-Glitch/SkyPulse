@@ -2,14 +2,10 @@ import React, { useState, useEffect } from "react";
 import NotesCard from "../components/sidebar-Pages/Notes/NotesCard";
 import AddNote from "../components/sidebar-Pages/Notes/AddNote";
 import { ToastContainer } from "react-toastify";
-import Loader from "../components/loader/Loader";
 
 const Notes = () => {
     const [addNote, setAddNote] = useState(false);
-    const [viewNote, setViewNote] = useState(false);
     const [notesData, setNotesData] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [noteView, setNoteView] = useState(null);
 
     useEffect(() => {
         const savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
@@ -28,7 +24,7 @@ const Notes = () => {
     return (
         <>
             <ToastContainer position="top-right" theme="light" />
-            <div className="relative w-full lg:px-6 ps-[4rem] pe-[1rem]">
+            <div className="relative w-full py-6 lg:px-6 ps-[4rem] pe-[1rem]">
                 <div className="mb-3">
                     <div>
                         <h1 className="font-worksans text-5xl font-medium text-text_Color">Notes</h1>
@@ -53,19 +49,12 @@ const Notes = () => {
                         </button>
                     </div>
                 </div>
-                {loading ? (
-                    <div className="h-[70vh] w-full">
-                        <Loader />
-                    </div>
-                ) : notesData.length > 0 ? (
+                {notesData.length > 0 ? (
                     <div className="mt-10 grid grid-cols-3 gap-4 w-full">
                         {notesData.map((note, index) => (
                             <NotesCard
                                 key={index}
                                 note={note}
-                                setNoteView={setNoteView}
-                                setViewNote={setViewNote}
-                                viewNote={viewNote}
                                 deleteNote={deleteNote}
                             />
                         ))}
