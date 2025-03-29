@@ -16,13 +16,13 @@ export default function Header() {
       storedPassword === "shahbaz2007"
     ) {
       setUserName("Shahbaz Ansari");
-      setRole("Administrator")
+      setRole("Staff Member")
     } else if (
       storedEmail === "ahad97140@gmail.com" &&
       storedPassword === "Code Crafter"
     ) {
       setUserName("Muhammad Ahad");
-      setRole("Creator")
+      setRole("Web Administrator")
     } else {
       setUserName("");
     }
@@ -48,7 +48,7 @@ export default function Header() {
 
   return (
     <div>
-      <nav className="bg-nav_and_Sidebar_Color z-10">
+      <nav className="bg-nav_and_Sidebar_Color z-30">
         <div className="flex items-center py-4 pb-3 lg:px-[5rem] md:px-[2.5rem] sm:px-[1.5rem] px-[.5rem] justify-between w-full">
           <Link to={"/"}>
             <div className="logo">
@@ -78,7 +78,7 @@ export default function Header() {
               {userName}
             </button>
             {isProfileOpen && (
-              <div className="absolute left-0 top-14 z-10 mt-2 w-[250px] rounded-md bg-body_Color shadow-lg">
+              <div className="absolute -left-10 top-14 z-10 mt-2 w-[280px] rounded-md bg-body_Color shadow-lg">
                 <ul className="py-1 px-1 text-[15px] text-zinc-200">
                   <div className="img-username flex items-center gap-1">
                     <img

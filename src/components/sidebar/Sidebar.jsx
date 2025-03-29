@@ -15,10 +15,10 @@ export default function Sidebar() {
     window.location.reload();
   };
   return (
-    <div className="relative h-[89vh] flex">
+    <div className="lg:relative fixed w-full lg:w-auto lg:h-[89vh] top-0 h-full flex z-30">
       <div
         className={`relative sidebar bg-nav_and_Sidebar_Color h-full px-6 py-6 transition-all duration-300 ${
-          isOpen ? "lg:w-[300px] w-full" : "w-[100px]"
+          isOpen ? "lg:w-[300px] w-full" : "lg:w-[100px] w-0"
         }`}
       >
         <button
@@ -45,9 +45,9 @@ export default function Sidebar() {
                 <li key={index}>
                   <Link
                     to={item.link}
-                    className="cursor-pointer group transition-all flex items-center gap-4 px-3 py-2 rounded hover:bg-body_Color lg:w-full sm:w-[50%] w-full"
+                    className="cursor-pointer group transition-all flex items-center gap-4 px-3 py-2 rounded hover:bg-icons_Color lg:w-full sm:w-[50%] w-full"
                   >
-                    <div className="icon text-2xl bg-body_Color w-10 h-10 flex items-center justify-center rounded-xl text-text_Color">
+                    <div className="icon text-2xl bg-icons_Color w-10 h-10 flex items-center justify-center rounded-xl text-text_Color">
                       {item.icon}
                     </div>
                     <span
@@ -63,7 +63,7 @@ export default function Sidebar() {
               <li className="mt-auto">
                 <Link
                   to={"/"}
-                  className="cursor-pointer transition-all flex items-center gap-4 bg-body_Color px-3 py-2 rounded lg:w-full sm:w-[50%] w-full"
+                  className="cursor-pointer transition-all flex items-center gap-4 bg-icons_Color px-3 py-2 rounded lg:w-full sm:w-[50%] w-full"
                   onClick={reloadPage}
                 >
                   <div className="icon text-2xl w-10 h-10 flex items-center justify-center rounded-xl text-text_Color">

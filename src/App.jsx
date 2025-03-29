@@ -11,8 +11,8 @@ function App() {
   return (
     <>
       <Header />
-      <Security />
-      <div className="lg:flex gap-12">
+      {/* <Security /> */}
+      <div className="lg:flex w-full">
         <Sidebar />
         <Routes>
           <Route path='/' element={<Dashboard />} />
