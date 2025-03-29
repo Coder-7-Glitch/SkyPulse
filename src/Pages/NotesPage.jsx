@@ -24,7 +24,7 @@ const NotesPage = () => {
 
   return (
     <>
-          <ToastContainer position="top-right" theme="light" autoClose={2000} />
+      <ToastContainer position="top-right" theme="light" autoClose={2000} />
       <div className="relative w-full py-6 lg:px-6 ps-[4rem] pe-[1rem]">
         <div className="mb-3">
           <div>
@@ -58,7 +58,7 @@ const NotesPage = () => {
           </div>
         </div>
         {notesData.length > 0 ? (
-          <div className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 w-full">
+          <div className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 gap-4 w-full">
             {notesData.map((note, index) => (
               <NotesCard key={index} note={note} deleteNote={deleteNote} />
             ))}

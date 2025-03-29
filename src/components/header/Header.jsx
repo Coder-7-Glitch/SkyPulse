@@ -12,10 +12,16 @@ export default function Header() {
     const storedEmail = localStorage.getItem("userEmail");
     const storedPassword = localStorage.getItem("userPassword");
 
-    if (storedEmail === "shahbazansari.dev@gmail.com" && storedPassword === "shahbaz2007") {
+    if (
+      storedEmail === "shahbazansari.dev@gmail.com" &&
+      storedPassword === "shahbaz2007"
+    ) {
       setUserName("Shahbaz Ansari");
       setRole("Staff Member");
-    } else if (storedEmail === "ahad97140@gmail.com" && storedPassword === "Code Crafter") {
+    } else if (
+      storedEmail === "ahad97140@gmail.com" &&
+      storedPassword === "Code Crafter"
+    ) {
       setUserName("Muhammad Ahad");
       setRole("Web Administrator");
     } else {
@@ -30,8 +36,10 @@ export default function Header() {
   useEffect(() => {
     function handleProfileClose(e) {
       if (
-        profileBtn.current && !profileBtn.current.contains(e.target) &&
-        profileMenu.current && !profileMenu.current.contains(e.target)
+        profileBtn.current &&
+        !profileBtn.current.contains(e.target) &&
+        profileMenu.current &&
+        !profileMenu.current.contains(e.target)
       ) {
         closeProfile();
       }
@@ -46,8 +54,16 @@ export default function Header() {
     <nav className="bg-nav_and_Sidebar_Color">
       <div className="flex items-center py-4 pb-3 lg:px-[5rem] md:px-[2.5rem] sm:px-[1.5rem] px-[.5rem] justify-between w-full">
         <Link to="/">
-          <img src="/assets/Website Name.svg" alt="Logo" className="w-[200px] sm:block hidden" />
-          <img src="/assets/Logo.svg" alt="Logo" className="w-[50px] sm:hidden block" />
+          <img
+            src="/assets/Website Name.svg"
+            alt="Logo"
+            className="w-[200px] sm:block hidden"
+          />
+          <img
+            src="/assets/Logo.svg"
+            alt="Logo"
+            className="w-[50px] sm:hidden block"
+          />
         </Link>
         <div className="profile relative text-white">
           <button
@@ -59,14 +75,25 @@ export default function Header() {
             }}
             className="flex items-center gap-2 text-lg"
           >
-            <img src="/assets/profile-img.jpeg" alt="Profile" className="rounded-full w-[50px] h-[50px]" />
+            <img
+              src="/assets/profile-img.jpeg"
+              alt="Profile"
+              className="rounded-full w-[50px] h-[50px]"
+            />
             {userName}
           </button>
           {isProfileOpen && (
-            <div ref={profileMenu} className="absolute -left-10 top-14 z-10 mt-2 w-[280px] rounded-md bg-body_Color shadow-lg">
+            <div
+              ref={profileMenu}
+              className="absolute -left-10 top-14 z-10 mt-2 w-[280px] rounded-md bg-body_Color shadow-lg"
+            >
               <ul className="py-1 px-1 text-[15px] text-zinc-200">
                 <div className="img-username flex items-center gap-1">
-                  <img src="/assets/profile-img.jpeg" alt="Profile" className="rounded-full w-[50px] h-[50px]" />
+                  <img
+                    src="/assets/profile-img.jpeg"
+                    alt="Profile"
+                    className="rounded-full w-[50px] h-[50px]"
+                  />
                   <li className="px-4 py-5 cursor-pointer">
                     <div className="username text-lg">{userName}</div>
                     <div className="flex items-center gap-2">
@@ -76,8 +103,19 @@ export default function Header() {
                   </li>
                 </div>
                 <hr className="mb-3" />
-                {["My Profile", "Password", "Edit Profile", "My List", "History", "Help"].map((item, index) => (
-                  <li key={index} className="px-4 py-2 cursor-pointer hover:bg-accent_Color rounded" onClick={closeProfile}>
+                {[
+                  "My Profile",
+                  "Password",
+                  "Edit Profile",
+                  "My List",
+                  "History",
+                  "Help",
+                ].map((item, index) => (
+                  <li
+                    key={index}
+                    className="px-4 py-2 cursor-pointer hover:bg-accent_Color rounded"
+                    onClick={closeProfile}
+                  >
                     <Link to="/">{item}</Link>
                   </li>
                 ))}

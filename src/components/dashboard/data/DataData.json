@@ -3,18 +3,18 @@
     "title": "Network",
     "amount": "35M",
     "percent": "25%"
-},
-{
-      "title": "Balance per year",
-      "amount": "480M",
-      "percent": "50%"
-    },
-    {
-      "title": "Earnings per month",
-      "amount": "40M",
-      "percent": "5%"
-    },
-    {
+  },
+  {
+    "title": "Balance per year",
+    "amount": "480M",
+    "percent": "50%"
+  },
+  {
+    "title": "Earnings per month",
+    "amount": "40M",
+    "percent": "5%"
+  },
+  {
     "title": "Donation per Month",
     "amount": "25M",
     "percent": "15%"

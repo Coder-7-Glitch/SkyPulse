@@ -18,7 +18,9 @@ export default function Sidebar() {
     <div className="lg:relative fixed w-full lg:w-auto top-0 h-screen flex z-30">
       <div
         className={`relative sidebar bg-nav_and_Sidebar_Color h-full px-6 py-6 transition-all duration-300 ${
-          isOpen ? "lg:w-[300px] w-full right-0" : "lg:w-[100px] w-0 right-[50px]"
+          isOpen
+            ? "lg:w-[300px] w-full right-0"
+            : "lg:w-[100px] w-0 right-[50px]"
         }`}
       >
         <button
@@ -32,7 +34,6 @@ export default function Sidebar() {
             <FaChevronRight className="text-2xl" />
           )}
         </button>
-
 
         {isOpen && (
           <div className="mt-10">

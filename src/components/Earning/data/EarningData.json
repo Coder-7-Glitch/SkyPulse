@@ -1,0 +1,62 @@
+[
+  {
+    "clientName": "Christopher Dekker",
+    "countryName": "USA",
+    "PaymentPerYear": "5000"
+  },
+  {
+    "clientName": "Mark Gates",
+    "countryName": "USA",
+    "PaymentPerYear": "2000"
+  },
+  {
+    "clientName": "Wolf Dalio",
+    "countryName": "USA",
+    "PaymentPerYear": "3000"
+  },
+  {
+    "clientName": "Emma Johansson",
+    "countryName": "Sweden",
+    "PaymentPerYear": "4500"
+  },
+  {
+    "clientName": "Oliver Smith",
+    "countryName": "UK",
+    "PaymentPerYear": "3800"
+  },
+  {
+    "clientName": "Sofia Moreau",
+    "countryName": "France",
+    "PaymentPerYear": "3600"
+  },
+  {
+    "clientName": "Hassan Al-Maktoum",
+    "countryName": "UAE",
+    "PaymentPerYear": "6200"
+  },
+  {
+    "clientName": "Liam O'Connor",
+    "countryName": "Ireland",
+    "PaymentPerYear": "3200"
+  },
+  {
+    "clientName": "Elena Petrova",
+    "countryName": "Russia",
+    "PaymentPerYear": "3900"
+  },
+  {
+    "clientName": "James Thompson",
+    "countryName": "Canada",
+    "PaymentPerYear": "4100"
+  },
+  {
+    "clientName": "Henry Williams",
+    "countryName": "UK",
+    "PaymentPerYear": "2900"
+  },
+  {
+    "clientName": "Charlotte Dubois",
+    "countryName": "France",
+    "PaymentPerYear": "4300"
+  }
+]

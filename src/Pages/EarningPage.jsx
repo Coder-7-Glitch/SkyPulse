@@ -1,5 +1,5 @@
-import React from 'react';
-import Earnings from '../components/Earning/Earnings'
+import React from "react";
+import Earnings from "../components/Earning/Earnings";
 
 export default function EarningPage() {
   return (
