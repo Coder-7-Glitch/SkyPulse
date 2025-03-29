@@ -39,9 +39,9 @@ export default function Sidebar() {
             <ul className="space-y-6 text-white">
               {[
                 { icon: <IoHome />, text: "Dashboard", link: "/" },
-                { icon: <IoStatsChart />, text: "Earning", link: "/" },
-                { icon: <IoIosDocument />, text: "Notes", link: "/" },
-                { icon: <IoIosRocket />, text: "Plans", link: "/" },
+                { icon: <IoStatsChart />, text: "Earning", link: "/earning" },
+                { icon: <IoIosDocument />, text: "Notes", link: "/notes" },
+                { icon: <IoIosRocket />, text: "Plans", link: "/plans" },
               ].map((item, index) => (
                 <li key={index}>
                   <Link

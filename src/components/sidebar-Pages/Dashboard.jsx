@@ -22,7 +22,7 @@ export default function Dashboard() {
         options: {
           chart: {
             width: "100%",
-            height: "100%"
+            height: "100%",
           },
         },
       },
@@ -65,7 +65,7 @@ export default function Dashboard() {
             With all of the styling tool options available in today's market
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 mt-6">
           {[...Array(4)].map((_, i) => (
             <div
               key={i}
