@@ -55,7 +55,7 @@ export default function Dashboard() {
   const pieSeries = [30.8, 25, 15.5, 26.7];
 
   return (
-    <div className="w-full lg:px-12 ps-[4rem] pe-[1rem]">
+    <div className="w-full lg:px-12 ps-[4rem] pe-[1rem] mb-3">
       <div className="pt-3">
         <div className="heading">
           <h1 className="text-3xl md:text-4xl lg:text-5xl text-text_Color">

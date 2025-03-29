@@ -48,7 +48,7 @@ export default function Header() {
 
   return (
     <div>
-      <nav className="bg-nav_and_Sidebar_Color z-30">
+      <nav className="bg-nav_and_Sidebar_Color">
         <div className="flex items-center py-4 pb-3 lg:px-[5rem] md:px-[2.5rem] sm:px-[1.5rem] px-[.5rem] justify-between w-full">
           <Link to={"/"}>
             <div className="logo">

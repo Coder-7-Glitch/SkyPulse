@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Security /> */}
+      <Security />
       <div className="lg:flex w-full">
         <Sidebar />
         <Routes>

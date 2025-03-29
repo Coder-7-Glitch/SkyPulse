@@ -15,15 +15,15 @@ export default function Sidebar() {
     window.location.reload();
   };
   return (
-    <div className="lg:relative fixed w-full lg:w-auto lg:h-[89vh] top-0 h-full flex z-30">
+    <div className="lg:relative fixed w-full lg:w-auto top-0 h-screen flex z-30">
       <div
         className={`relative sidebar bg-nav_and_Sidebar_Color h-full px-6 py-6 transition-all duration-300 ${
-          isOpen ? "lg:w-[300px] w-full" : "lg:w-[100px] w-0"
+          isOpen ? "lg:w-[300px] w-full right-0" : "lg:w-[100px] w-0 right-[50px]"
         }`}
       >
         <button
           type="button"
-          className="bg-text_Color p-2 absolute lg:right-[-15px] right-0 top-0 rounded-full"
+          className={`bg-text_Color p-2 absolute lg:right-[-15px] right-[-43px] lg:top-0 top-[86px] rounded-full ${isOpen ? "right-[2px]" : "right-[-43px]"}`}
           onClick={toggleSidebar}
         >
           {isOpen ? (
@@ -32,6 +32,7 @@ export default function Sidebar() {
             <FaChevronRight className="text-2xl" />
           )}
         </button>
+
 
         {isOpen && (
           <div className="mt-10">
@@ -63,7 +64,7 @@ export default function Sidebar() {
               <li className="mt-auto">
                 <Link
                   to={"/"}
-                  className="cursor-pointer transition-all flex items-center gap-4 bg-icons_Color px-3 py-2 rounded lg:w-full sm:w-[50%] w-full"
+                  className="cursor-pointer transition-all flex items-center gap-4 bg-icons_Color px-3 py-2 rounded lg:w-full sm:w-[50%] w-full lg:mt-[15rem]"
                   onClick={reloadPage}
                 >
                   <div className="icon text-2xl w-10 h-10 flex items-center justify-center rounded-xl text-text_Color">
