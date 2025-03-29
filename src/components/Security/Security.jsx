@@ -10,8 +10,8 @@ export default function Security() {
     e.preventDefault();
 
     const validCredentials = {
-      "ahad97140@gmail.com": "Code Crafter",
-      "shahbazansari.dev@gmail.com": "shahbaz2007",
+      "ahad97140@gmail.com": "2010",
+      "shahbazansari.dev@gmail.com": "2007",
     };
 
     const email = emailInp.current.value;
@@ -58,6 +58,7 @@ export default function Security() {
                 placeholder="Enter Email"
                 className="w-full py-2 px-3 rounded-[2px] mt-1 outline-none text-black"
                 ref={emailInp}
+                maxLength={27}
               />
             </div>
             <div className="input text-start">
@@ -69,6 +70,7 @@ export default function Security() {
                 placeholder="Enter Password"
                 className="w-full py-2 px-3 rounded-[2px] mt-1 outline-none text-black"
                 ref={passwordInp}
+                maxLength={4}
               />
             </div>
             <div className="submit-btn mt-3">
