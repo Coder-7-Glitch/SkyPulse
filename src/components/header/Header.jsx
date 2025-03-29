@@ -14,13 +14,13 @@ export default function Header() {
 
     if (
       storedEmail === "shahbazansari.dev@gmail.com" &&
-      storedPassword === "shahbaz2007"
+      storedPassword === "2007"
     ) {
       setUserName("Shahbaz Ansari");
       setRole("Staff Member");
     } else if (
       storedEmail === "ahad97140@gmail.com" &&
-      storedPassword === "Code Crafter"
+      storedPassword === "2010"
     ) {
       setUserName("Muhammad Ahad");
       setRole("Web Administrator");
@@ -85,7 +85,7 @@ export default function Header() {
           {isProfileOpen && (
             <div
               ref={profileMenu}
-              className="absolute -left-10 top-14 z-10 mt-2 w-[280px] rounded-md bg-body_Color shadow-lg"
+              className="absolute left-0 top-14 z-10 mt-2 w-[280px] rounded-md bg-body_Color shadow-lg"
             >
               <ul className="py-1 px-1 text-[15px] text-zinc-200">
                 <div className="img-username flex items-center gap-1">
