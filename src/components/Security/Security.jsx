@@ -40,7 +40,7 @@ export default function Security() {
           </div>
           <div className="content my-6">
             <h1 className="text-5xl font-fontWorkSans font-semibold">
-              Hi, Welcome to SkyPlus
+              Hi, Welcome to SkyPulse
             </h1>
           </div>
           {alertMessage && (
