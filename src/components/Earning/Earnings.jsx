@@ -16,7 +16,7 @@ export default function Earnings() {
           </div>
           <div className="other flex items-baseline justify-between mt-4">
             <div className="country">
-              <h1 className="md:text-5xl text-3xl text-text_Color font-bold">
+              <h1 className="md:text-[40px] text-3xl text-text_Color font-semibold">
                 {earnings.countryName}
               </h1>
             </div>

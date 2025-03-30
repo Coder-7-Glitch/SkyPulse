@@ -9,8 +9,8 @@ export default function PlansPage() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl text-text_Color">
             Plans
           </h1>
-          <p className="text-sm md:text-lg text-[#9d9d9d] mt-1">
-            With all of the styling tool options available in today's market
+          <p className="text-sm md:text-lg text-[#9d9d9d] mt-1 font-fontWorkSans">
+            Plans drive success with smart tools, clear goals, and bold actions.
           </p>
         </div>
         <Todo />

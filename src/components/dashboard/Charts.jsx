@@ -30,8 +30,8 @@ export default function Charts() {
 
   const lineSeries = [
     {
-      name: "Sales",
-      data: [30, 40, 35, 50, 49, 60, 70, 91, 80, 95, 100, 110],
+      name: "Balance",
+      data: [0, 50, 100, 150, 250, 300, 350, 400, 450, 480],
     },
   ];
   const pieOptions = {
@@ -51,7 +51,7 @@ export default function Charts() {
       },
     ],
   };
-  const pieSeries = [30.8, 25, 15.5, 26.7];
+  const pieSeries = [13, 5, 4, 4];
 
   return (
     <div>
