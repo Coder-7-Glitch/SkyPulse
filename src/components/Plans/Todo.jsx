@@ -1,44 +1,44 @@
-import React, { useState, useEffect } from 'react';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React, { useState, useEffect } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Todo() {
   const [tasks, setTasks] = useState(() => {
-    const savedTasks = localStorage.getItem('tasks');
+    const savedTasks = localStorage.getItem("tasks");
     return savedTasks ? JSON.parse(savedTasks) : [];
   });
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
 
   useEffect(() => {
-    localStorage.setItem('tasks', JSON.stringify(tasks));
+    localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
   const addTask = () => {
-    if (input.trim() === '') {
-      toast.warning('Please write something!!!');
+    if (input.trim() === "") {
+      toast.warning("Please write something!!!");
       return;
     } else {
       setTasks([...tasks, { text: input, completed: false }]);
-      setInput('');
-      toast.success('Note Added Successfully!');
+      setInput("");
+      toast.success("Note Added Successfully!");
     }
   };
 
   const toggleTask = (index) => {
     const newTasks = tasks.map((task, i) =>
-      i === index ? { ...task, completed: !task.completed } : task
+      i === index ? { ...task, completed: !task.completed } : task,
     );
     setTasks(newTasks);
   };
 
   const removeTask = (index) => {
     setTasks(tasks.filter((_, i) => i !== index));
-    toast.success('Note Deleted Successfully!');
+    toast.success("Note Deleted Successfully!");
   };
 
   return (
     <div className="max-w-md mx-auto mt-10 p-6 rounded-lg bg-accent_Color shadow-lg">
-      <ToastContainer position='top-right' autoClose={2000} />
+      <ToastContainer position="top-right" autoClose={2000} />
       <div className="flex items-center justify-between bg-body_Color rounded-full p-3 shadow-md">
         <input
           type="text"
@@ -59,7 +59,7 @@ export default function Todo() {
           <li
             key={index}
             onClick={() => toggleTask(index)}
-            className={`relative p-4 pl-10 cursor-pointer bg-body_Color text-white rounded-md shadow-md flex items-center justify-between transition-all duration-150 ease-in-out ${task.completed ? 'line-through text-gray-400' : ''}`}
+            className={`relative p-4 pl-10 cursor-pointer bg-body_Color text-white rounded-md shadow-md flex items-center justify-between transition-all duration-150 ease-in-out ${task.completed ? "line-through text-gray-400" : ""}`}
           >
             <span className="flex-1">{task.text}</span>
             <button

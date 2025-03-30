@@ -14,7 +14,7 @@ export default function Earnings() {
               {earnings.clientName}
             </h1>
           </div>
-          <div className="other flex items-center justify-between mt-4">
+          <div className="other flex items-baseline justify-between mt-4">
             <div className="country">
               <h1 className="md:text-5xl text-3xl text-text_Color font-bold">
                 {earnings.countryName}
