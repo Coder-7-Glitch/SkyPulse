@@ -4,16 +4,60 @@ import Chart from "react-apexcharts";
 export default function Charts() {
   const lineOptions = {
     chart: {
-      id: "line-chart",
+      id: "balance-trend",
       toolbar: {
         show: false,
       },
     },
     xaxis: {
-      categories: [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+      categories: ["Earning", "Saving", "Expense", "Investment"],
+      title: {
+        text: "Financial Categories",
+        style: {
+          fontSize: "18px",
+          fontWeight: "semibold",
+          color: "#6DD9D3",
+        },
+      },
+      labels: {
+        style: {
+          colors: "#FFFFFF",
+        },
+      },
+    },
+    yaxis: {
+      title: {
+        text: "Amount (in Millions)",
+        style: {
+          fontSize: "18px",
+          fontWeight: "semibold",
+          color: "#6DD9D3",
+        },
+      },
+      labels: {
+        style: {
+          colors: "#FFFFFF",
+        },
+      },
+      min: 0,
+      max: 14,
     },
     stroke: {
       curve: "smooth",
+      width: 2,
+    },
+    colors: ["#1E90FF"],
+    markers: {
+      size: 5,
+      colors: ["#1E90FF"],
+      strokeWidth: 2,
+    },
+    grid: {
+      borderColor: "#444",
+      strokeDashArray: 5,
+    },
+    tooltip: {
+      theme: "dark",
     },
     responsive: [
       {
@@ -30,12 +74,28 @@ export default function Charts() {
 
   const lineSeries = [
     {
-      name: "Balance",
-      data: [0, 50, 100, 150, 250, 300, 350, 400, 450, 480],
+      name: "Total Balance",
+      data: [13, 5, 4, 4],
     },
   ];
+
   const pieOptions = {
     labels: ["Earning", "Savings", "Expense", "Investments"],
+    legend: {
+      position: "bottom",
+      labels: {
+        colors: "#6DD9D3",
+        style: {
+          fontSize: "18px",
+          fontWeight: 600,
+        },
+      },
+      markers: {
+        width: 16,
+        height: 16,
+        offsetX: -5,
+      },
+    },
     responsive: [
       {
         breakpoint: 1024,
@@ -51,6 +111,7 @@ export default function Charts() {
       },
     ],
   };
+
   const pieSeries = [13, 5, 4, 4];
 
   return (
@@ -61,7 +122,7 @@ export default function Charts() {
             Total Balance
           </h2>
           <p className="text-sm md:text-md text-[#9d9d9d] mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
+            Total balance reflects assets, expenses, and net worth.
           </p>
           <div className="w-full">
             <Chart
