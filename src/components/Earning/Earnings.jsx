@@ -10,7 +10,7 @@ export default function Earnings() {
           key={i}
         >
           <div className="client-name text-center">
-            <h1 className="text-xl text-white font-semibold">
+            <h1 className="text-xl text-white font-medium">
               {earnings.clientName}
             </h1>
           </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Todo from "../components/Plans/Todo";
 
 export default function PlansPage() {
   return (
@@ -12,6 +13,7 @@ export default function PlansPage() {
             With all of the styling tool options available in today's market
           </p>
         </div>
+        <Todo />
       </div>
     </div>
   );
