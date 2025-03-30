@@ -65,7 +65,7 @@ export default function Charts() {
         options: {
           chart: {
             width: "100%",
-            height: "100%",
+            height: "270px",
           },
         },
       },

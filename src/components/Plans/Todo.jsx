@@ -37,15 +37,15 @@ export default function Todo() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 rounded-lg bg-accent_Color shadow-lg">
+    <div className="md:max-w-md w-full mx-auto mt-10 p-6 rounded-lg bg-accent_Color shadow-lg">
       <ToastContainer position="top-right" autoClose={2000} />
-      <div className="flex items-center justify-between bg-body_Color rounded-full p-3 shadow-md">
+      <div className="flex items-center justify-between bg-body_Color rounded-full p-3 shadow-md w-full flex-wrap">
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Enter Your Text"
-          className="flex-1 border-none outline-none bg-transparent px-2 text-white placeholder-gray-300"
+          className="flex-1 border-none outline-none bg-transparent px-2 text-white placeholder-gray-300 w-full"
         />
         <button
           onClick={addTask}

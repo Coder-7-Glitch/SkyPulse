@@ -25,7 +25,7 @@ const NotesPage = () => {
   return (
     <>
       <ToastContainer position="top-right" theme="light" autoClose={2000} />
-      <div className="relative w-full lg:px-12 ps-[4rem] pe-[1rem] pt-3">
+      <div className="relative w-full lg:px-12 md:ps-[4rem] ps-[.5rem] pe-[.5rem] mb-3 md:pt-3 pt-10">
         <div className="mb-3">
           <div className="heading">
             <h1 className="text-3xl md:text-4xl lg:text-5xl text-text_Color font-fontRoboto">

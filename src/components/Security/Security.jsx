@@ -31,15 +31,15 @@ export default function Security() {
   return (
     <div>
       <div
-        className="security w-full h-full fixed bg-black flex items-center justify-center z-[9999] top-0"
+        className="security w-full h-full fixed bg-black flex items-center justify-center z-[9999] top-0 lg:px-12 md:px-6 px-3"
         ref={securityCard}
       >
         <div className="security-card text-white text-center relative">
-          <div className="logo w-[200px] mx-auto">
+          <div className="logo md:w-[200px] w-[100px] mx-auto">
             <img src="/assets/Logo.svg" alt="IMG" className="w-full" />
           </div>
           <div className="content my-6">
-            <h1 className="text-5xl font-fontWorkSans font-semibold">
+            <h1 className="md:text-5xl font-fontWorkSans font-semibold text-2xl">
               Hi, Welcome to SkyPulse
             </h1>
           </div>
