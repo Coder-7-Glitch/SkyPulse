@@ -19,7 +19,7 @@ export default function Header() {
       setUserName("Shahbaz Ansari");
       setRole("Staff Member");
     } else if (
-      storedEmail === "ahad97140@gmail.com" &&
+      storedEmail === "ahad97.dev@gmail.com" &&
       storedPassword === "2010"
     ) {
       setUserName("Muhammad Ahad");

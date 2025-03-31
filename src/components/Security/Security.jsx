@@ -10,7 +10,7 @@ export default function Security() {
     e.preventDefault();
 
     const validCredentials = {
-      "ahad97140@gmail.com": "2010",
+      "ahad.dev@gmail.com": "2010",
       "shahbazansari.dev@gmail.com": "2007",
     };
 
