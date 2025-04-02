@@ -117,7 +117,7 @@ export default function Charts() {
   return (
     <div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-3 mt-3">
-        <div className="border border-[#4d4d4d] rounded-md p-4">
+        <div className="border border-[#4d4d4d] rounded-2xl p-4">
           <h2 className="text-2xl md:text-3xl text-text_Color mb-2">
             Total Balance
           </h2>
@@ -134,7 +134,7 @@ export default function Charts() {
             />
           </div>
         </div>
-        <div className="border border-[#4d4d4d] rounded-md p-4">
+        <div className="border border-[#4d4d4d] rounded-2xl p-4">
           <h2 className="text-2xl md:text-3xl text-text_Color mb-2">
             Balance Distribution
           </h2>

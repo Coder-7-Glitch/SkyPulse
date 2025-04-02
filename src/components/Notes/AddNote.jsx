@@ -78,19 +78,19 @@ const AddNote = ({ setAddNote, setNotesData }) => {
           Title will be taken from the first H1/H2 header or first few words.
         </p>
         <div
-          className={`mt-2 h-[250px] rounded-md pb-[44px] text-zinc-900 ${data.background}`}
+          className={`mt-2 h-[250px] rounded-2xl pb-[44px] text-zinc-900 ${data.background}`}
         >
           <div ref={editorRef} className="h-full w-full p-2" />
         </div>
         <div className="mt-8 flex gap-3">
           <button
-            className="rounded-md bg-text_Color px-5 py-2"
+            className="rounded-2xl bg-text_Color px-5 py-2"
             onClick={addNote}
           >
             Save
           </button>
           <button
-            className="rounded-md border-2 border-text_Color px-5 py-2 text-text_Color "
+            className="rounded-2xl border-2 border-text_Color px-5 py-2 text-text_Color "
             onClick={() => setAddNote(false)}
           >
             Cancel

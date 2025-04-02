@@ -15,23 +15,30 @@ export default function Sidebar() {
 
   const handleLogout = () => {
     setTimeout(() => {
-      window.location.reload(); // Reload the page to refresh the DOM
-    }, 100); // Small delay ensures navigation happens before reload
-    navigate("/"); // Navigate to home
+      window.location.reload();
+    }, 100); 
+    navigate("/");
   };
 
   return (
-    <div className="lg:relative fixed w-full lg:w-auto top-0 h-screen flex z-30">
+    <div className="relative w-auto top-0 h-screen z-30 hidden lg:flex">
       <div
-        className={`relative sidebar bg-nav_and_Sidebar_Color h-full px-6 py-6 transition-all duration-300 ${isOpen ? "lg:w-[300px] w-full right-0" : "lg:w-[100px] w-0 right-[50px]"
-          }`}
+        className={`relative sidebar bg-nav_and_Sidebar_Color h-full px-6 py-6 transition-all duration-300 ${
+          isOpen
+            ? "w-[300px]"
+            : "w-[100px]"
+        }`}
       >
         <button
           type="button"
           className={`bg-text_Color p-2 absolute lg:right-[-15px] right-[-43px] lg:top-0 top-[86px] rounded-full ${isOpen ? "right-[2px]" : "right-[-43px]"}`}
           onClick={toggleSidebar}
         >
-          {isOpen ? <FaChevronLeft className="text-2xl" /> : <FaChevronRight className="text-2xl" />}
+          {isOpen ? (
+            <FaChevronLeft className="text-2xl" />
+          ) : (
+            <FaChevronRight className="text-2xl" />
+          )}
         </button>
 
         {isOpen && (
@@ -48,12 +55,13 @@ export default function Sidebar() {
                     to={item.link}
                     className="cursor-pointer group transition-all flex items-center gap-4 px-3 py-2 rounded hover:bg-icons_Color lg:w-full sm:w-[50%] w-full"
                   >
-                    <div className="icon text-2xl bg-icons_Color w-10 h-10 flex items-center justify-center rounded-xl text-text_Color">
+                    <div className="icon text-2xl bg-icons_Color w-10 h-10 flex items-center justify-center rounded-2xl text-text_Color">
                       {item.icon}
                     </div>
                     <span
-                      className={`group-hover:text-text_Color text-lg transition-opacity duration-300 ${isOpen ? "opacity-100" : "opacity-0 hidden md:block"
-                        }`}
+                      className={`group-hover:text-text_Color text-lg transition-opacity duration-300 ${
+                        isOpen ? "opacity-100" : "opacity-0 hidden md:block"
+                      }`}
                     >
                       {item.text}
                     </span>
@@ -65,12 +73,13 @@ export default function Sidebar() {
                   className="cursor-pointer transition-all flex items-center gap-4 bg-icons_Color px-3 py-2 rounded lg:w-full sm:w-[50%] w-full lg:mt-[10rem]"
                   onClick={handleLogout}
                 >
-                  <div className="icon text-2xl w-10 h-10 flex items-center justify-center rounded-xl text-text_Color">
+                  <div className="icon text-2xl w-10 h-10 flex items-center justify-center rounded-2xl text-text_Color">
                     <FiLogOut />
                   </div>
                   <span
-                    className={`text-text_Color text-lg transition-opacity duration-300 ${isOpen ? "opacity-100" : "opacity-0 hidden md:block"
-                      }`}
+                    className={`text-text_Color text-lg transition-opacity duration-300 ${
+                      isOpen ? "opacity-100" : "opacity-0 hidden md:block"
+                    }`}
                   >
                     Log Out
                   </span>

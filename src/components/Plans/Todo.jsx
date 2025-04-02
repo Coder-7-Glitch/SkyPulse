@@ -59,7 +59,7 @@ export default function Todo() {
           <li
             key={index}
             onClick={() => toggleTask(index)}
-            className={`relative p-4 pl-10 cursor-pointer bg-body_Color text-white rounded-md shadow-md flex items-center justify-between transition-all duration-150 ease-in-out ${task.completed ? "line-through text-gray-400" : ""}`}
+            className={`relative p-4 pl-10 cursor-pointer bg-body_Color text-white rounded-2xl shadow-md flex items-center justify-between transition-all duration-150 ease-in-out ${task.completed ? "line-through text-gray-400" : ""}`}
           >
             <span className="flex-1">{task.text}</span>
             <button

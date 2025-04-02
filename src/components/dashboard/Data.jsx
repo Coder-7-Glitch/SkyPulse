@@ -9,7 +9,7 @@ export default function Data() {
         {DataData.map((data, i) => (
           <div
             key={i}
-            className="p-3 border border-[#4d4d4d] rounded-md w-full"
+            className="p-3 border border-[#4d4d4d] rounded-2xl w-full"
           >
             <div className="heading flex items-center justify-between w-full">
               <div className="content">
