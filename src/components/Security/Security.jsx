@@ -24,7 +24,7 @@ export default function Security() {
       securityCard.current.classList.remove("block");
       setAlertMessage("");
     } else {
-      setAlertMessage("Only Administrator can enter");
+      setAlertMessage("Only Administrators can enter.");
     }
   }
 
@@ -34,49 +34,49 @@ export default function Security() {
         className="security w-full h-full fixed bg-black flex items-center justify-center z-[9999] top-0 lg:px-12 md:px-6 px-3"
         ref={securityCard}
       >
-        <div className="security-card text-white text-center relative">
-          <div className="logo md:w-[200px] w-[100px] mx-auto">
-            <img src="/assets/Logo.svg" alt="IMG" className="w-full" />
-          </div>
+        <div className="security-card text-white text-center relative bg-body_Color p-6 rounded-xl w-[500px] shadow-lg">
           <div className="content my-6">
-            <h1 className="md:text-5xl font-fontWorkSans font-semibold text-2xl">
-              Hi, Welcome to SkyPulse
+            <h1 className="font-fontWorkSans font-semibold flex items-center gap-3 text-3xl justify-center">
+              <img src="/assets/Logo.svg" alt="SkyPulse Logo" className="w-[50px]" /> SkyPulse
             </h1>
+            <p className="mt-4 text-lg text-center">
+              Welcome to SkyPulse – Where Muhammad Ahad's Dreams Take Flight.
+            </p>
           </div>
           {alertMessage && (
             <div className="custom-alert bg-red-500 text-white p-3 rounded-md mb-4">
               {alertMessage}
             </div>
           )}
-          <form>
-            <div className="input text-start mb-3">
-              <label htmlFor="Email">Email</label>
+          <form className="space-y-4">
+            <div className="input text-start text-text_Color">
+              <label htmlFor="Email" className="font-semibold">Email</label>
               <input
-                type="Email"
+                type="email"
                 name="Email"
                 id="Email"
                 placeholder="Enter Email"
-                className="w-full py-2 px-3 rounded-[2px] mt-1 outline-none text-black"
+                className="w-full py-2 px-3 rounded-md mt-1 outline-none text-text_Color bg-accent_Color placeholder:text-gray-400"
                 ref={emailInp}
                 maxLength={27}
               />
             </div>
-            <div className="input text-start">
-              <label htmlFor="password">Password</label>
+            <div className="input text-start text-text_Color">
+              <label htmlFor="password" className="font-semibold">Password</label>
               <input
                 type="password"
                 name="password"
                 id="password"
                 placeholder="Enter Password"
-                className="w-full py-2 px-3 rounded-[2px] mt-1 outline-none text-black"
+                className="w-full py-2 px-3 rounded-md mt-1 outline-none text-text_Color bg-accent_Color placeholder:text-gray-400"
                 ref={passwordInp}
                 maxLength={4}
               />
             </div>
-            <div className="submit-btn mt-3">
+            <div className="submit-btn mt-4">
               <button
                 type="button"
-                className="text-[20px] bg-body_Color px-6 py-3 rounded-[8px] hover:bg-text_Color hover:text-black transition-all ease-linear"
+                className="w-full text-[20px] bg-accent_Color px-6 py-3 rounded-lg hover:bg-text_Color hover:text-black transition-all ease-linear font-semibold"
                 onClick={securityFunction}
               >
                 Proceed
