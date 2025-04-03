@@ -78,7 +78,7 @@ const AddNote = ({ setAddNote, setNotesData }) => {
           The Note could not be edited or changed!
         </p>
         <div
-          className={`mt-2 h-[250px] rounded-2xl pb-[44px] text-zinc-900 ${data.background}`}
+          className="mt-2 h-[250px] rounded-2xl pb-[44px] text-zinc-900"
         >
           <div ref={editorRef} className="h-full w-full p-2" />
         </div>

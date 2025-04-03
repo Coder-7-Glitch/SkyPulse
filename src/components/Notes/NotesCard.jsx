@@ -11,7 +11,7 @@ const NotesCard = ({ note, setNoteView, deleteNote }) => {
     >
       <div className="relative">
         <div
-          className={`absolute inset-0 bg-gradient-to-br ${note.background} overflow-hidden rounded-xl opacity-90`}
+          className="absolute inset-0 bg-gradient-to-br overflow-hidden rounded-xl opacity-90"
         ></div>
         <div className="absolute inset-0 rounded-xl bg-white/10 backdrop-blur-[1px]"></div>
         <div className="pointer-events-none absolute inset-0 m-1 rounded-xl border-2 border-dashed border-white/40"></div>

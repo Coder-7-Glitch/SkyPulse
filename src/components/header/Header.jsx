@@ -113,10 +113,10 @@ export default function Header() {
                 </div>
                 <hr className="mb-3" />
                 {[
-                  "My Profile",
-                  "Change PIN",
-                  "Edit Profile",
-                  "Add Earnings",
+                  { item: "My Profile", link: "/profile"},
+                  { item: "Change PIN", link: "/change-pin"},
+                  { item: "Edit Profile", link: "/edit-profile"},
+                  { item: "Policies", link: "/policies"}
                   
                 ].map((item, index) => (
                   <li
@@ -124,7 +124,7 @@ export default function Header() {
                     className="px-4 py-2 cursor-pointer hover:bg-accent_Color rounded"
                     onClick={closeProfile}
                   >
-                    <Link to="/">{item}</Link>
+                    <Link to={item.link}>{item.item}</Link>
                   </li>
                 ))}
                 <hr className="mt-2 mb-5" />  
