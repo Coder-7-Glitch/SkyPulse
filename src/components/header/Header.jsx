@@ -115,7 +115,7 @@ export default function Header() {
                 {[
                   { item: "My Profile", link: "/profile"},
                   { item: "Change PIN", link: "/change-pin"},
-                  { item: "Edit Profile", link: "/edit-profile"},
+                  { item: "People Added", link: "/people-add"},
                   { item: "Policies", link: "/policies"}
                   
                 ].map((item, index) => (

@@ -9,7 +9,7 @@ import EarningPage from "./Pages/EarningPage";
 import NotesPage from "./Pages/NotesPage";
 import PlansPage from "./Pages/PlansPage";
 import Profile from "./components/Profile/Profile";
-import EditProfile from "./components/Profile/EditProfile";
+import PeopleAdded from "./components/Profile/PeopleAdded";
 import Policies from "./components/Profile/Policies";
 import ChangePin from "./components/Profile/ChangePin";
 
@@ -26,7 +26,7 @@ function App() {
           <Route path="/notes" element={<NotesPage />} />
           <Route path="/plans" element={<PlansPage />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/edit-profile" element={<EditProfile />} />
+          <Route path="/people-add" element={<PeopleAdded />} />
           <Route path="/change-pin" element={<ChangePin />} />
           <Route path="/policies" element={<Policies />} />
         </Routes>
