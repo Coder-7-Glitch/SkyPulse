@@ -75,7 +75,7 @@ const AddNote = ({ setAddNote, setNotesData }) => {
           Write a new note
         </h1>
         <p className="text-zinc-400">
-          Title will be taken from the first H1/H2 header or first few words.
+          The Note could not be edited or changed!
         </p>
         <div
           className={`mt-2 h-[250px] rounded-2xl pb-[44px] text-zinc-900 ${data.background}`}

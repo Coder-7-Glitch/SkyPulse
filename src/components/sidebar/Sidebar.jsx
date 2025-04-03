@@ -2,22 +2,13 @@ import React, { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { IoHome, IoStatsChart } from "react-icons/io5";
 import { IoIosDocument, IoIosRocket } from "react-icons/io";
-import { FiLogOut } from "react-icons/fi";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(true);
-  const navigate = useNavigate();
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
-  };
-
-  const handleLogout = () => {
-    setTimeout(() => {
-      window.location.reload();
-    }, 100);
-    navigate("/");
   };
 
   return (
@@ -66,23 +57,6 @@ export default function Sidebar() {
                   </Link>
                 </li>
               ))}
-              <li className="mt-auto">
-                <button
-                  className="cursor-pointer transition-all flex items-center gap-4 bg-icons_Color px-3 py-2 rounded lg:w-full sm:w-[50%] w-full lg:mt-[10rem]"
-                  onClick={handleLogout}
-                >
-                  <div className="icon text-2xl w-10 h-10 flex items-center justify-center rounded-2xl text-text_Color">
-                    <FiLogOut />
-                  </div>
-                  <span
-                    className={`text-text_Color text-lg transition-opacity duration-300 ${
-                      isOpen ? "opacity-100" : "opacity-0 hidden md:block"
-                    }`}
-                  >
-                    Log Out
-                  </span>
-                </button>
-              </li>
             </ul>
           </div>
         )}

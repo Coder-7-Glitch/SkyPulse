@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { FiLogOut } from "react-icons/fi";
 
 export default function Header() {
   const profileBtn = useRef(null);
@@ -7,6 +8,7 @@ export default function Header() {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [userName, setUserName] = useState("");
   const [role, setRole] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     const storedEmail = localStorage.getItem("userEmail");
@@ -49,6 +51,13 @@ export default function Header() {
       document.removeEventListener("mousedown", handleProfileClose);
     };
   }, []);
+
+  const handleLogout = () => {
+    setTimeout(() => {
+      window.location.reload();
+    }, 100);
+    navigate("/");
+  };
 
   return (
     <nav className="bg-nav_and_Sidebar_Color">
@@ -105,11 +114,10 @@ export default function Header() {
                 <hr className="mb-3" />
                 {[
                   "My Profile",
-                  "Password",
+                  "Change PIN",
                   "Edit Profile",
-                  "My List",
-                  "History",
-                  "Help",
+                  "Add Earnings",
+                  
                 ].map((item, index) => (
                   <li
                     key={index}
@@ -119,6 +127,18 @@ export default function Header() {
                     <Link to="/">{item}</Link>
                   </li>
                 ))}
+                <hr className="mt-2 mb-5" />  
+                <li>
+                  <button
+                    className="cursor-pointer transition-all flex items-center gap-4 bg-[#6dd9d430] px-3 py-2 rounded w-full "
+                    onClick={handleLogout}
+                  >
+                    <div className="icon text-lg w-10 h-10 flex items-center justify-center rounded-2xl text-text_Color">
+                      <FiLogOut />
+                    </div>
+                    <span className="text-text_Color text-lg">Log Out</span>
+                  </button>
+                </li>
               </ul>
             </div>
           )}
