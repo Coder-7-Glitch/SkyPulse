@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom"; // FIXED import
+import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"; // ADDED missing Toastify CSS import
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Security() {
   const passwordInp = useRef();
@@ -23,15 +23,13 @@ export default function Security() {
     if (validCredentials[email] === password) {
       localStorage.setItem("userEmail", email);
       localStorage.setItem("userPassword", password);
-
-      // Check if securityCard.current exists before modifying classList
       if (securityCard.current) {
         securityCard.current.classList.add("hidden");
         securityCard.current.classList.remove("block");
       }
 
       setAlertMessage("");
-      toast.success("Login Successful!"); // Toast now works!
+      toast.success("Login Successful!");
     } else {
       setAlertMessage("Only Administrators can enter.");
     }

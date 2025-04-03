@@ -3,6 +3,7 @@ import Charts from "../components/dashboard/Charts";
 import Data from "../components/dashboard/Data";
 
 export default function DashboardPage() {
+
   return (
     <div className="w-full lg:px-12 md:ps-[4rem] ps-[.5rem] pe-[.5rem] mb-3 md:pt-3 pt-10">
       <div className="pt-3">
