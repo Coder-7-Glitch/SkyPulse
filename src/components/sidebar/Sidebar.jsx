@@ -16,7 +16,7 @@ export default function Sidebar() {
   const handleLogout = () => {
     setTimeout(() => {
       window.location.reload();
-    }, 100); 
+    }, 100);
     navigate("/");
   };
 
@@ -24,9 +24,7 @@ export default function Sidebar() {
     <div className="relative w-auto top-0 h-screen z-30 hidden lg:flex">
       <div
         className={`relative sidebar bg-nav_and_Sidebar_Color h-full px-6 py-6 transition-all duration-300 ${
-          isOpen
-            ? "w-[300px]"
-            : "w-[100px]"
+          isOpen ? "w-[300px]" : "w-[100px]"
         }`}
       >
         <button

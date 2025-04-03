@@ -24,8 +24,7 @@ export default function Header() {
     ) {
       setUserName("Muhammad Ahad");
       setRole("Web Administrator");
-    }
- else {
+    } else {
       setUserName("");
     }
   }, []);
