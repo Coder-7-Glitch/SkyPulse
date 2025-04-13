@@ -35,7 +35,7 @@ const NotesPage = () => {
               Keep all your notes organized and accessible.
             </p>
           </div>
-          <div className="fixed bottom-10 right-10">
+          <div className="fixed lg:bottom-10 right-10 bottom-24">
             <button
               onClick={() => setAddNote(!addNote)}
               className="group cursor-pointer outline-none duration-300 hover:rotate-90"
